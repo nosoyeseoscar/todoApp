@@ -8,21 +8,25 @@
 .container {
   width: 33%;
   height: 33%;
-  border: 1px dotted #000;
-  padding: .5em;;
+  padding: .5em;
+  border-radius: 15px;
+  background: #f8f8f8;
 }
 
 .task-list {
     margin: .5em;
-    border: 1px solid #000;
     padding: .5em;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 10px;
 }
 
 .addTask{
-  background-color: #fff;
-  border: 1px solid #000;
   margin: 0.5em;;
   padding: .5em;
+  background-color:white;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* Input 100% */
@@ -40,16 +44,37 @@
   margin: 0.5em;
   padding: 0.5em;
   box-sizing: border-box;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  background-color: #efefef;
+
 }
 
 .addTaskButton {
   margin: 0.5em;
   padding: 0.5em 1em;
+  border: none;
+  background-color: #2565AE;
+  color: white;
+  border-radius: 0 5px 5px 0;
 }
 /* End Input 100% */
 
 .task{
-  border: 1px solid #000;
-  margin: .5em auto;
+  border-bottom: 2px solid #d8d5d5;
+  margin: 0 0.5em 1em 0.5em;
+  padding: 0.5em;
+  text-align: left;
+  border-radius: 5px 5px 0 0;
+  font-size: 20px;
+
 }
 
+.clearCompletedBtn {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  border: none;
+  background-color: #2565AE;
+  color: white;
+  border-radius: 5px;
+}

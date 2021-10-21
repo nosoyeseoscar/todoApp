@@ -6,7 +6,7 @@ function TaskList () {
       <Task />
       <Task />
       <Task />
-      <button>Delete All Done</button>
+      <button className='clearCompletedBtn'>Delete All Done</button>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 function Task () {
   return (
     <div className='task'>
-      Tarea
+      <input type='checkbox' /><label>Tarea Pendiente</label>
     </div>
   )
 }
