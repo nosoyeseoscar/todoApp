@@ -3,8 +3,7 @@ import TaskList from './taskList'
 
 function Container () {
   return (
-    <div>
-      Container
+    <div className='container'>
       <AddTaskForm />
       <TaskList />
     </div>

@@ -1,6 +1,6 @@
 function Task () {
   return (
-    <div>
+    <div className='task'>
       Tarea
     </div>
   )
