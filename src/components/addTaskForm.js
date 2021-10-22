@@ -1,11 +1,31 @@
-function AddTaskForm () {
+import { useState } from 'react'
+
+function AddTaskForm ({ handleNewTask }) {
+  const [newTask, setNewTask] = useState('')
+
+  const handleAddTask = (e) => {
+    e.preventDefault()
+    handleNewTask(
+      {
+        id: (+new Date()).toString(),
+        text: newTask,
+        done: false
+      }
+    )
+  }
+
+  const handleOnChangeAddTask = (e) => {
+    setNewTask(e.target.value)
+    // console.log(newInputTask)
+  }
+
   return (
     <div className='addTask'>
-      <form className='addTaskForm'>
+      <form className='addTaskForm' onSubmit={handleAddTask}>
         <div className='input-text-div'>
-          <input type='text' className='input-text' />
+          <input type='text' className='input-text' onChange={handleOnChangeAddTask} value={newTask} />
         </div>
-        <button className='addTaskButton'>Add</button>
+        <button className='addTaskButton' disabled={newTask ? '' : 'disabled'}>Add</button>
       </form>
     </div>
   )
