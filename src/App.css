@@ -79,17 +79,15 @@
 }
 
 .task-cbox{
-  cursor: pointer; 
   width: 25px;
   height: 25px;
-  vertical-align: middle;
   margin-right: 0.5em;
+  vertical-align:text-top;
 
 }
 
 .task-label{
   cursor: pointer; 
-
 }
 
 .clearCompletedBtn {
