@@ -3,9 +3,9 @@ import Task from './Task'
 function TaskList () {
   return (
     <div className='task-list'>
-      <Task />
-      <Task />
-      <Task />
+      <Task labelTask='Primera Tarea' />
+      <Task labelTask='Segunda Tarea' />
+      <Task labelTask='Tercera Tarea' />
       <button className='clearCompletedBtn'>Delete All Done</button>
     </div>
   )
