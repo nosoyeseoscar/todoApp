@@ -16,7 +16,7 @@ function Container () {
   return (
     <div className='container'>
       <AddTaskForm handleNewTask={handleNewTask} />
-      <TaskList listTask={listTask} />
+      <TaskList listTask={listTask} setListTask={setListTask} />
     </div>
   )
 }

@@ -86,8 +86,15 @@
 
 }
 
+
 .task-label{
   cursor: pointer; 
+}
+
+.task-label-checked{
+  cursor: pointer;
+  text-decoration: line-through;
+  opacity: 0.3;
 }
 
 .clearCompletedBtn {
@@ -99,6 +106,8 @@
   border-radius: 5px;
   font-size: 20px;
 }
+
+
 
 /* CSS general */
 button[disabled]{

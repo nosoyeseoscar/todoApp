@@ -1,9 +1,14 @@
 function Task (props) {
-  const { labelTask, done } = props
+  const { labelTask, id, onChangeStatus, done } = props
 
   return (
     <div className='task-div'>
-      <label className='task-label'><input type='checkbox' className='task-cbox' checked={done} />{labelTask}</label>
+      <label
+        className={done ? 'task-label-checked' : 'task-label'}
+      >
+        <input type='checkbox' className='task-cbox' onClick={onChangeStatus} id={id} />
+        {labelTask}
+      </label>
     </div>
   )
 }
