@@ -63,8 +63,10 @@
   color: white;
   border-radius: 0 5px 5px 0;
   font-size: 20px;
+}
 
-
+.addTaskButton:active{
+  background-color: #00578E;
 }
 /* End Input 100% */
 
@@ -105,6 +107,11 @@
   color: white;
   border-radius: 5px;
   font-size: 20px;
+}
+
+.clearCompletedBtn:active{
+  transform: translateY(3px);
+  background-color: #00578E;
 }
 
 

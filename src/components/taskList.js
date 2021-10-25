@@ -3,11 +3,14 @@ import Task from './Task'
 function TaskList ({ listTask, setListTask }) {
   const onChangeStatus = (e) => {
     const { id, checked } = e.target
-    console.log(e.target)
     const newListTask = listTask.map(
       task => ({ ...task, done: task.id === id ? checked : task.done })
     )
-    console.log(newListTask)
+    setListTask(newListTask)
+  }
+
+  const handleClearButton = () => {
+    const newListTask = listTask.filter((task) => task.done === false)
     setListTask(newListTask)
   }
 
@@ -17,6 +20,7 @@ function TaskList ({ listTask, setListTask }) {
       <button
         className='clearCompletedBtn'
         disabled={listTask.length ? '' : 'disabled'}
+        onClick={handleClearButton}
       >Delete All Done
       </button>
     </div>

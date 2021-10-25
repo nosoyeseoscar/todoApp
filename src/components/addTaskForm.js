@@ -23,7 +23,7 @@ function AddTaskForm ({ handleNewTask }) {
     <div className='addTask'>
       <form className='addTaskForm' onSubmit={handleAddTask}>
         <div className='input-text-div'>
-          <input type='text' className='input-text' onChange={handleOnChangeAddTask} value={newTask} />
+          <input type='text' className='input-text' placeholder='Inserta la nueva tarea' onChange={handleOnChangeAddTask} value={newTask} />
         </div>
         <button className='addTaskButton' disabled={newTask ? '' : 'disabled'}>Add</button>
       </form>
